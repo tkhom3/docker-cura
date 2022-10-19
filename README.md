@@ -37,7 +37,7 @@ Mount the following directories: `/config`, `/storage` and `/output`.
   <Category>Productivity:</Category>
   <WebUI>https://[IP]:[PORT:5800]</WebUI>
   <TemplateURL/>
-  <Icon/>
+  <Icon>https://github.com/tkhom3/docker-cura/raw/main/metadata/icon.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
