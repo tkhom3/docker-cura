@@ -14,8 +14,10 @@ RUN mkdir /storage
 RUN mkdir /output
 RUN chmod 777 /output
 
-# RUN wget -O /usr/share/cura/Ultimaker_Cura.AppImage $(curl -s https://api.github.com/repos/Ultimaker/Cura/releases | grep browser_download_url | grep '.AppImage' | head -n 1 | cut -d '"' -f 4)
 RUN wget -O /usr/share/cura/Ultimaker_Cura.AppImage https://github.com/Ultimaker/Cura/releases/download/${APP_VERSION}/Ultimaker_Cura-${APP_VERSION}.AppImage
+
+# Grab latest version
+# RUN wget -O /usr/share/cura/Ultimaker_Cura.AppImage $(curl -s https://api.github.com/repos/Ultimaker/Cura/releases | grep browser_download_url | grep '.AppImage' | head -n 1 | cut -d '"' -f 4)
 
 # Link for 5.x versions. Current issues with GLIBC
 # RUN wget -O /usr/share/cura/Ultimaker_Cura.AppImage https://github.com/Ultimaker/Cura/releases/download/${APP_VERSION}/Ultimaker-Cura-${APP_VERSION}-linux-modern.AppImage
